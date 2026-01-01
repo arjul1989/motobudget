@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Detalle de la Moto</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#facc14", // Safety Yellow
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#1f2023", // Adjusted slightly to be more 'asphalt' grey than brown
+                        "surface-dark": "#2a2b2e",
+                        "surface-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for industrial feel */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1f2023; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4b5563; 
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #facc14; 
+        }
+        
+        /* Glassmorphism utility */
+        .glass-panel {
+            background: rgba(42, 43, 46, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white font-display antialiased selection:bg-primary selection:text-black">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden max-w-md mx-auto shadow-2xl bg-background-light dark:bg-background-dark">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-50 flex items-center bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md p-4 justify-between border-b border-gray-200 dark:border-white/5">
+<button class="text-gray-900 dark:text-white hover:text-primary transition-colors flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/5">
+<span class="material-symbols-outlined" style="font-size: 24px;">arrow_back</span>
+</button>
+<h2 class="text-lg font-bold leading-tight tracking-tight">Detalle del Proyecto</h2>
+<button class="text-primary text-sm font-bold tracking-wide hover:underline">GUARDAR</button>
+</div>
+<!-- Profile / Bike Header -->
+<div class="p-4 pt-6">
+<div class="flex gap-5 items-start">
+<div class="relative group cursor-pointer shrink-0">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-xl w-28 h-28 shadow-lg ring-1 ring-white/10" data-alt="Side profile view of a black Yamaha motorcycle parked on concrete" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuADrQA8dckh84SF9UBCGb6EA-Au9R5JGojG4ehVVo75nyDMbgT04zUCgPaE5ysUxWIQWP1aiWvvFfqeFDjfl_Bci3tVeUfewNZq7JLymifo4cBjug4fIkN9q1iHrb_FG6LkxaKuewerdmLbnyXJNh_UlQIJS7tUWObVLHzVlyTx6szZuP-nzFluBDrWS-BGCfkR8zVTrWaI28Cjyr5kIj2pHUQQ0qM63tN2YloCjuhs8Zlykhd47Nzt3HWqO0jqkQVDRO358fQ6eUCL");'>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-gray-800 p-1.5 rounded-full border border-gray-600 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px] block">edit</span>
+</div>
+</div>
+<div class="flex flex-col flex-1 gap-1">
+<div class="flex items-start justify-between">
+<h1 class="text-2xl font-bold leading-none tracking-tight">Yamaha DT 125</h1>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-medium">Modelo 2024</p>
+<div class="mt-2 flex flex-wrap gap-2">
+<div class="px-2.5 py-1 rounded bg-yellow-500/10 border border-yellow-500/20 text-yellow-500 text-xs font-bold uppercase tracking-wider">
+                            En Taller
+                        </div>
+<div class="px-2.5 py-1 rounded bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-xs font-mono text-gray-600 dark:text-gray-300">
+                            XYZ-123
+                        </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Action -->
+<div class="px-4 pb-2">
+<button class="w-full flex items-center justify-center gap-2 bg-primary hover:bg-yellow-400 text-background-dark font-bold h-12 rounded-lg shadow-lg shadow-yellow-500/10 transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[22px]">picture_as_pdf</span>
+<span>Exportar Presupuesto PDF</span>
+</button>
+</div>
+<!-- Comparison Section -->
+<div class="flex flex-col flex-1 p-4 gap-6">
+<!-- Cost Table -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="text-lg font-bold">Costos &amp; Ejecución</h3>
+<span class="text-xs text-gray-400 bg-gray-800 px-2 py-1 rounded border border-gray-700">COP ($)</span>
+</div>
+<!-- Table Header -->
+<div class="grid grid-cols-12 gap-3 px-3 py-2 bg-gray-200 dark:bg-surface-dark rounded-t-lg border-b border-gray-300 dark:border-gray-700">
+<div class="col-span-5 text-xs font-bold uppercase tracking-wider text-gray-500">Concepto</div>
+<div class="col-span-3 text-right text-xs font-bold uppercase tracking-wider text-gray-500">Est.</div>
+<div class="col-span-4 text-right text-xs font-bold uppercase tracking-wider text-primary">Real</div>
+</div>
+<!-- Table Body -->
+<div class="glass-panel rounded-b-lg overflow-hidden flex flex-col divide-y divide-gray-700/50">
+<!-- Row 1: Compra -->
+<div class="grid grid-cols-12 gap-3 p-3 items-center group hover:bg-white/5 transition-colors">
+<div class="col-span-5 flex flex-col justify-center">
+<span class="text-sm font-medium">Compra Moto</span>
+<span class="text-[10px] text-gray-500">12/Oct/2023</span>
+</div>
+<div class="col-span-3 text-right text-sm text-gray-400 font-mono">5.0M</div>
+<div class="col-span-4">
+<div class="relative">
+<span class="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500 text-xs">$</span>
+<input class="w-full bg-gray-900/50 border border-gray-600 focus:border-primary text-right text-white text-sm py-1.5 pl-4 pr-2 rounded focus:ring-1 focus:ring-primary outline-none font-mono transition-all" type="text" value="4.800.000"/>
+</div>
+</div>
+</div>
+<!-- Row 2: Trámites -->
+<div class="grid grid-cols-12 gap-3 p-3 items-center group hover:bg-white/5 transition-colors">
+<div class="col-span-5 flex flex-col justify-center">
+<span class="text-sm font-medium">Trámites</span>
+</div>
+<div class="col-span-3 text-right text-sm text-gray-400 font-mono">300k</div>
+<div class="col-span-4">
+<div class="relative">
+<span class="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500 text-xs">$</span>
+<input class="w-full bg-gray-900/50 border border-red-500/50 focus:border-red-500 text-right text-white text-sm py-1.5 pl-4 pr-2 rounded focus:ring-1 focus:ring-red-500 outline-none font-mono transition-all" type="text" value="350.000"/>
+</div>
+</div>
+</div>
+<!-- Row 3: Mano de Obra -->
+<div class="grid grid-cols-12 gap-3 p-3 items-center group hover:bg-white/5 transition-colors">
+<div class="col-span-5 flex flex-col justify-center">
+<span class="text-sm font-medium">Mano de Obra</span>
+</div>
+<div class="col-span-3 text-right text-sm text-gray-400 font-mono">800k</div>
+<div class="col-span-4">
+<div class="relative">
+<span class="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500 text-xs">$</span>
+<input class="w-full bg-gray-900/50 border border-gray-600 focus:border-primary text-right text-white text-sm py-1.5 pl-4 pr-2 rounded focus:ring-1 focus:ring-primary outline-none font-mono transition-all" type="text" value="800.000"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Parts Section -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="text-lg font-bold">Repuestos y Ajustes</h3>
+<button class="flex items-center gap-1 text-xs font-bold bg-gray-800 hover:bg-gray-700 text-primary px-3 py-1.5 rounded transition-colors border border-gray-700">
+<span class="material-symbols-outlined text-sm">add</span>
+                        AGREGAR
+                    </button>
+</div>
+<div class="glass-panel rounded-lg flex flex-col divide-y divide-gray-700/50">
+<!-- Part Item 1 -->
+<div class="grid grid-cols-12 gap-3 p-3 items-center">
+<div class="col-span-5 flex flex-col">
+<span class="text-sm font-medium truncate">Kit de Arrastre</span>
+<span class="text-[10px] text-gray-500 uppercase">Repuesto</span>
+</div>
+<div class="col-span-3 text-right text-sm text-gray-400 font-mono">120k</div>
+<div class="col-span-4">
+<input class="w-full bg-gray-900/50 border border-gray-600 focus:border-primary text-right text-white text-sm py-1.5 px-2 rounded focus:ring-1 focus:ring-primary outline-none font-mono" type="text" value="120.000"/>
+</div>
+</div>
+<!-- Part Item 2 -->
+<div class="grid grid-cols-12 gap-3 p-3 items-center">
+<div class="col-span-5 flex flex-col">
+<span class="text-sm font-medium truncate">Pintura Tanque</span>
+<span class="text-[10px] text-gray-500 uppercase">Tercerizado</span>
+</div>
+<div class="col-span-3 text-right text-sm text-gray-400 font-mono">250k</div>
+<div class="col-span-4">
+<input class="w-full bg-gray-900/50 border border-gray-600 focus:border-primary text-right text-white text-sm py-1.5 px-2 rounded focus:ring-1 focus:ring-primary outline-none font-mono placeholder-gray-600" placeholder="0" type="text"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Financial Summary Dashboard -->
+<div class="mt-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-5 border border-gray-700 shadow-2xl relative overflow-hidden">
+<!-- Decorative background elements -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none"></div>
+<h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4 border-b border-gray-700 pb-2">Resultados Financieros</h3>
+<div class="grid grid-cols-2 gap-x-6 gap-y-6">
+<div class="flex flex-col gap-1">
+<span class="text-xs text-gray-500 font-medium">Inversión Total (Real)</span>
+<span class="text-xl font-bold font-mono text-white">$ 6.070.000</span>
+<span class="text-[10px] text-red-400 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[10px]">trending_up</span>
+                            +3% vs Est.
+                        </span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-xs text-gray-500 font-medium">Venta Sugerida</span>
+<div class="flex items-center gap-2">
+<input class="w-full bg-transparent border-b border-dashed border-gray-500 focus:border-primary text-lg font-bold font-mono text-gray-300 py-0 px-0 outline-none" type="text" value="7.500.000"/>
+<span class="material-symbols-outlined text-gray-500 text-sm cursor-help">edit</span>
+</div>
+</div>
+<div class="col-span-2 bg-gray-950/50 rounded-lg p-4 border border-primary/20 flex items-center justify-between mt-2">
+<div class="flex flex-col">
+<span class="text-xs text-primary font-bold uppercase tracking-wider">Ganancia Neta</span>
+<span class="text-[10px] text-gray-400">Margen Calculado: 19%</span>
+</div>
+<span class="text-3xl font-bold text-primary font-mono tracking-tight">$ 1.430.000</span>
+</div>
+</div>
+</div>
+<!-- Spacer for bottom safe area -->
+<div class="h-8"></div>
+</div>
+<!-- Floating Action Button (Alternative quick add) -->
+<button class="fixed bottom-6 right-6 shadow-xl shadow-black/50 bg-white text-black hover:bg-gray-200 size-14 rounded-full flex items-center justify-center z-40 transition-transform active:scale-90">
+<span class="material-symbols-outlined">add_a_photo</span>
+</button>
+</div>
+</body></html>

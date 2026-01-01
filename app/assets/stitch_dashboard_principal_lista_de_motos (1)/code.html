@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ManoMotos Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#facc14", // Safety Yellow
+                        "primary-dark": "#eab308", 
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#121212", // Deep Asphalt
+                        "surface-dark": "#1E1E1E", // Card Background
+                        "surface-highlight": "#2C2C2C",
+                        "text-dim": "#9ca3af",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Space Grotesk", sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        .glass-nav {
+            background: rgba(18, 18, 18, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen flex flex-col relative overflow-hidden">
+<!-- Top App Bar -->
+<header class="glass-nav fixed top-0 left-0 right-0 z-50 px-4 pt-12 pb-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">two_wheeler</span>
+<h2 class="text-white text-xl font-bold tracking-tight uppercase">ManoMotos</h2>
+</div>
+<button class="relative rounded-full overflow-hidden w-10 h-10 border-2 border-primary/20">
+<img class="w-full h-full object-cover" data-alt="User avatar profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwZh4W8QgJ-C6LQeuuNwTeiZ2DYlSSn1C1vLC9LESSL42_5IIkmu0fUWDr5NH5RsQEF7Yq7seSXcYjyWuZ-m7rcPxxrFaV2wwDiXcemGsjUK6vKqcp0Ew8MmqxpsrSBEs9uIYo5r7nft6p6PA7X4xN9sYz83Ql-pRBlOqCsmGOzSuESeFvjzFk9-inSbiHeICAeXufTt9GLoSrGin6ETCspP9i88h-f4__IYQYNTIGwezWT3VRa36r8GEjTDdCabIwLsjvBmLSG-HZ"/>
+<div class="absolute top-0 right-0 w-3 h-3 bg-primary rounded-full border-2 border-background-dark"></div>
+</button>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 w-full pt-28 pb-24 px-4 overflow-y-auto no-scrollbar space-y-6">
+<!-- Filter Chips -->
+<div class="flex gap-3 overflow-x-auto no-scrollbar pb-1 -mx-4 px-4">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary pl-5 pr-5 shadow-lg shadow-primary/20">
+<p class="text-black text-sm font-bold leading-normal">Todos</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-surface-dark border border-white/10 pl-5 pr-5">
+<p class="text-text-dim text-sm font-medium leading-normal">En Taller</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-surface-dark border border-white/10 pl-5 pr-5">
+<p class="text-text-dim text-sm font-medium leading-normal">En Venta</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-surface-dark border border-white/10 pl-5 pr-5">
+<p class="text-text-dim text-sm font-medium leading-normal">Vendidas</p>
+</button>
+</div>
+<!-- Summary Stats (Optional Santandereano Touch) -->
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-dark rounded-xl p-3 border border-white/5">
+<p class="text-text-dim text-xs uppercase font-bold tracking-wider mb-1">Total Invertido</p>
+<p class="text-white text-lg font-bold">$45.2M</p>
+</div>
+<div class="bg-surface-dark rounded-xl p-3 border border-white/5">
+<p class="text-primary text-xs uppercase font-bold tracking-wider mb-1">Proyectado</p>
+<p class="text-primary text-lg font-bold">+$12.8M</p>
+</div>
+</div>
+<!-- Card List -->
+<div class="flex flex-col gap-4">
+<!-- Card 1: En Reparación -->
+<div class="group relative flex flex-col rounded-xl bg-surface-dark border border-white/5 overflow-hidden shadow-lg shadow-black/40">
+<div class="flex p-3 gap-4">
+<div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden relative bg-surface-highlight">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<img class="w-full h-full object-cover" data-alt="Yamaha DT 125 motorcycle side view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSLUiiy34hFmYRp76gZ88ArKvG9f3KHn_2vITtA2kgmuBwAwoKk-ON82QVXXYUNjTYdH70QUxcRLtVRaZ8XHh9Hndc-eDNBWc-SKyKcZ0HUJogePaRDE6R8yqABNuVsKkCFLbfJO-jPWwmdJW5h9OuwQQ4LgzSApjmH7Vc-d_6Vbq6vuesFywCxgL851acVYC9hxN616uihg0-m57EWyyXG_8lV-0HydGWPq_2T9pEig3swc8JRR2igLWcDmL2af1CG675BS_mNtbR"/>
+</div>
+<div class="flex flex-col flex-1 justify-between py-0.5">
+<div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-white text-base font-bold leading-tight">Yamaha DT 125 - 2005</h3>
+<button class="text-text-dim hover:text-white">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<span class="inline-flex items-center rounded-md bg-yellow-400/10 px-2 py-0.5 text-xs font-medium text-yellow-400 ring-1 ring-inset ring-yellow-400/20 mb-2">
+                                En Reparación
+                            </span>
+</div>
+<div class="grid grid-cols-2 gap-x-2 text-xs">
+<div class="flex flex-col">
+<span class="text-text-dim">Inversión</span>
+<span class="text-white font-medium">$5.0M</span>
+</div>
+<div class="flex flex-col border-l border-white/10 pl-2">
+<span class="text-text-dim">Proyectado</span>
+<span class="text-primary font-bold">$7.5M</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Progress Bar Section -->
+<div class="px-3 pb-3 pt-1">
+<div class="flex justify-between items-center mb-1.5">
+<span class="text-[10px] text-text-dim uppercase tracking-wider font-bold">Progreso del Taller</span>
+<span class="text-xs text-white font-bold">60%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-highlight rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 60%"></div>
+</div>
+</div>
+</div>
+<!-- Card 2: Lista para Venta -->
+<div class="group relative flex flex-col rounded-xl bg-surface-dark border border-white/5 overflow-hidden shadow-lg shadow-black/40">
+<div class="flex p-3 gap-4">
+<div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden relative bg-surface-highlight">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<img class="w-full h-full object-cover" data-alt="Suzuki Vivax 115 motorcycle studio shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0INfhpucLch_ec2YmLPnVg8Nu0wCFLbrBTSvguEgA5bEZVYE0lCoMbIMDxDuieyWXNXLi_CdBryU-D3YoWhniAKJ7IhD6XJuOmA2Wf8GOspn_jwV5HuwvviS56qFHYXEpmw898ZUwbV1T-dXGT5iNU2RvFhFfPjBJ2su8ZiEqjGQ-mrK1_YhsIm4LHtwmhOjV916f8o47Shnb27ZFMKJwVGB8_WHt0AgQ5ndEAFz6V11OuL3S2cv6Fn3KqxgPYrOdcoS7DgAtwgBU"/>
+</div>
+<div class="flex flex-col flex-1 justify-between py-0.5">
+<div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-white text-base font-bold leading-tight">Suzuki Vivax 115 - 2012</h3>
+<button class="text-text-dim hover:text-white">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<span class="inline-flex items-center rounded-md bg-green-400/10 px-2 py-0.5 text-xs font-medium text-green-400 ring-1 ring-inset ring-green-400/20 mb-2">
+                                Lista para Venta
+                            </span>
+</div>
+<div class="grid grid-cols-2 gap-x-2 text-xs">
+<div class="flex flex-col">
+<span class="text-text-dim">Inversión</span>
+<span class="text-white font-medium">$2.1M</span>
+</div>
+<div class="flex flex-col border-l border-white/10 pl-2">
+<span class="text-text-dim">Precio Venta</span>
+<span class="text-green-400 font-bold">$3.5M</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Progress Bar Section (Completed) -->
+<div class="px-3 pb-3 pt-1">
+<div class="flex justify-between items-center mb-1.5">
+<span class="text-[10px] text-text-dim uppercase tracking-wider font-bold">Progreso del Taller</span>
+<span class="text-xs text-green-400 font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                            ¡Quedó mela!
+                        </span>
+</div>
+<div class="h-1.5 w-full bg-surface-highlight rounded-full overflow-hidden">
+<div class="h-full bg-green-500 rounded-full" style="width: 100%"></div>
+</div>
+</div>
+</div>
+<!-- Card 3: En Taller (Early stage) -->
+<div class="group relative flex flex-col rounded-xl bg-surface-dark border border-white/5 overflow-hidden shadow-lg shadow-black/40">
+<div class="flex p-3 gap-4">
+<div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden relative bg-surface-highlight">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<img class="w-full h-full object-cover" data-alt="Honda C70 motorcycle rusty vintage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJT8jOqjA_4dORjk8Y4l7zDzBbkCqwhrqZ2a5zx-vEFat8LRK7Pt560xbeBAvEajN1-pr1ElNq0KTBayAb5TGOkvPPOf21AD48YuyJQHVTnauHzHsGpGoiE2bvkwVBUwHpfo0gmDU-Fdtnt4MH00Nzw_DWaRxOgvaWmT2rHEDqkK64vmgc_Pd2T-UOy-VhuEIueenUdniYUAAPt3FuwFvP6J5vOkQ9l8tR1uxfhbAJYVBrqtQ0wxhcQ2uwbd-FVBaVKZt7WvmJgs0U"/>
+</div>
+<div class="flex flex-col flex-1 justify-between py-0.5">
+<div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-white text-base font-bold leading-tight">Honda C70 - 1994</h3>
+<button class="text-text-dim hover:text-white">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<span class="inline-flex items-center rounded-md bg-yellow-400/10 px-2 py-0.5 text-xs font-medium text-yellow-400 ring-1 ring-inset ring-yellow-400/20 mb-2">
+                                En Reparación
+                            </span>
+</div>
+<div class="grid grid-cols-2 gap-x-2 text-xs">
+<div class="flex flex-col">
+<span class="text-text-dim">Inversión</span>
+<span class="text-white font-medium">$800K</span>
+</div>
+<div class="flex flex-col border-l border-white/10 pl-2">
+<span class="text-text-dim">Proyectado</span>
+<span class="text-primary font-bold">$2.5M</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Progress Bar Section -->
+<div class="px-3 pb-3 pt-1">
+<div class="flex justify-between items-center mb-1.5">
+<span class="text-[10px] text-text-dim uppercase tracking-wider font-bold">Progreso del Taller</span>
+<span class="text-xs text-white font-bold">15%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-highlight rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 15%"></div>
+</div>
+</div>
+</div>
+<!-- Card 4: Vendida -->
+<div class="group relative flex flex-col rounded-xl bg-surface-dark border border-white/5 overflow-hidden shadow-lg shadow-black/40 opacity-75">
+<div class="flex p-3 gap-4">
+<div class="w-24 h-24 shrink-0 rounded-lg overflow-hidden relative bg-surface-highlight">
+<div class="absolute inset-0 bg-black/40 z-10"></div> <!-- Dimmed image -->
+<img class="w-full h-full object-cover grayscale" data-alt="AKT NKD 125 motorcycle black and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdYkC1GBh971EsJMPzHfchvxPf2XMUgmx01_YZhjndcmYPM6Gjz4uWB5vTsq_loBB0qWv7Nn9NhKt0O-ZyMqfvNwdLKz6F6TYiOSjyw-x-uCaR41h9sfz9ddLlkIY8F8ymzaCRSymdhwEUAKhsPfLpyjqFmTFCYWlInxEcabmx_aK-EpwPC-Flycy_9y11ylFHWgEyn8uQ2eTRNctTU1WLWFh6GVMx847NrniH8zk93uDeax6faoV1KSaAmsqC3oqVvL8pUN1d_Vow"/>
+</div>
+<div class="flex flex-col flex-1 justify-between py-0.5">
+<div>
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-gray-300 text-base font-bold leading-tight line-through decoration-primary decoration-2">AKT NKD 125 - 2021</h3>
+<button class="text-text-dim hover:text-white">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<span class="inline-flex items-center rounded-md bg-gray-400/10 px-2 py-0.5 text-xs font-medium text-gray-400 ring-1 ring-inset ring-gray-400/20 mb-2">
+                                Vendida
+                            </span>
+</div>
+<div class="grid grid-cols-2 gap-x-2 text-xs">
+<div class="flex flex-col">
+<span class="text-text-dim">Ganancia Neta</span>
+<span class="text-primary font-bold">+$1.2M</span>
+</div>
+<div class="flex flex-col border-l border-white/10 pl-2">
+<span class="text-text-dim">Venta Final</span>
+<span class="text-white font-medium">$3.8M</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Spacer so FAB doesn't cover content -->
+<div class="h-20"></div>
+</div>
+</main>
+<!-- Floating Action Button -->
+<button class="fixed bottom-24 right-4 z-40 bg-primary hover:bg-primary-dark text-black rounded-2xl w-14 h-14 flex items-center justify-center shadow-[0_0_15px_rgba(250,204,20,0.4)] transition-transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined text-3xl font-bold">add</span>
+</button>
+<!-- Bottom Navigation -->
+<nav class="glass-nav fixed bottom-0 left-0 right-0 z-50 h-[84px] px-6 pb-5 pt-3 flex items-start justify-between">
+<button class="flex flex-col items-center gap-1 w-16 group">
+<span class="material-symbols-outlined text-primary text-[28px]">dashboard</span>
+<span class="text-[10px] font-medium text-primary">Inicio</span>
+</button>
+<button class="flex flex-col items-center gap-1 w-16 group">
+<span class="material-symbols-outlined text-text-dim group-hover:text-white transition-colors text-[28px]">payments</span>
+<span class="text-[10px] font-medium text-text-dim group-hover:text-white transition-colors">Finanzas</span>
+</button>
+<button class="flex flex-col items-center gap-1 w-16 group">
+<span class="material-symbols-outlined text-text-dim group-hover:text-white transition-colors text-[28px]">handyman</span>
+<span class="text-[10px] font-medium text-text-dim group-hover:text-white transition-colors">Taller</span>
+</button>
+<button class="flex flex-col items-center gap-1 w-16 group">
+<span class="material-symbols-outlined text-text-dim group-hover:text-white transition-colors text-[28px]">person</span>
+<span class="text-[10px] font-medium text-text-dim group-hover:text-white transition-colors">Perfil</span>
+</button>
+</nav>
+</body></html>

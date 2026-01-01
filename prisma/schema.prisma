@@ -7,6 +7,7 @@ generator client {
 
 datasource db {
   provider = "sqlite"
+  url      = env("DATABASE_URL")
 }
 
 // NextAuth Models
@@ -68,7 +69,8 @@ model Moto {
   model     String
   year      Int
   plate     String?
-  status    String   @default("COMPRADA") // COMPRADA, EN_REPARACION, A_LA_VENTA, VENDIDA
+  image     String?   // URL or identifier for the moto image
+  status    String   @default("EN_LA_MIRA") // EN_LA_MIRA, COMPRADA, EN_TALLER, EN_VENTA, VENDIDA
 
   // Time Tracking
   purchaseDate           DateTime

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/jules/Moto_Budget/app/providers.tsx"],"sourcesContent":["'use client';\n\nimport { SessionProvider } from 'next-auth/react';\nimport { ThemeProvider } from 'next-themes';\n\nexport default function Providers({ children }: { children: React.ReactNode }) {\n    return (\n        <SessionProvider>\n            <ThemeProvider attribute=\"class\" defaultTheme=\"system\" enableSystem>\n                {children}\n            </ThemeProvider>\n        </SessionProvider>\n    );\n}\n"],"names":[],"mappings":";;;;;AAEA;AACA;AAHA;;;;AAKe,SAAS,UAAU,EAAE,QAAQ,EAAiC;IACzE,qBACI,6LAAC,oKAAe;kBACZ,cAAA,6LAAC,oKAAa;YAAC,WAAU;YAAQ,cAAa;YAAS,YAAY;sBAC9D;;;;;;;;;;;AAIjB;KARwB"}}]
+}

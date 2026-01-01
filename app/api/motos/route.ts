@@ -52,16 +52,42 @@ export async function POST(request: Request) {
         return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
+    const normalizedBody = {
+        ...body,
+        purchaseCostReal: body.purchaseCostReal || 0,
+        laborCostReal: body.laborCostReal || 0,
+        paperworkCostReal: body.paperworkCostReal || 0,
+        laborCostEstimated: body.laborCostEstimated || 0,
+        paperworkCostEstimated: body.paperworkCostEstimated || 0,
+        userId: user.id
+    };
+
+    // Create Moto
     const newMoto = await prisma.moto.create({
         data: {
-            userId: user.id,
-            brand,
-            model,
-            year: parseInt(year),
-            purchaseCostEstimated: parseFloat(purchaseCostEstimated),
-            purchaseDate: new Date(purchaseDate),
-            status: 'COMPRADA'
-        }
+            brand: normalizedBody.brand,
+            model: normalizedBody.model,
+            year: parseInt(normalizedBody.year),
+            plate: normalizedBody.plate,
+            purchaseDate: new Date(normalizedBody.purchaseDate),
+            purchaseCostEstimated: parseFloat(normalizedBody.purchaseCostEstimated),
+            purchaseCostReal: normalizedBody.purchaseCostReal,
+            laborCostEstimated: normalizedBody.laborCostEstimated,
+            laborCostReal: normalizedBody.laborCostReal,
+            paperworkCostEstimated: normalizedBody.paperworkCostEstimated,
+            paperworkCostReal: normalizedBody.paperworkCostReal,
+            status: 'EN_LA_MIRA',
+
+            userId: normalizedBody.userId,
+
+            spareParts: {
+                create: body.parts ? body.parts.map((p: any) => ({
+                    name: p.name,
+                    costEstimated: p.estimated,
+                    costReal: p.real || 0
+                })) : []
+            }
+        },
     });
 
     return NextResponse.json(newMoto);

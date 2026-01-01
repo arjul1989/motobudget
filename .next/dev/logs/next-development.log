@@ -1,0 +1,1033 @@
+[00:00:00.477] Server  LOG     ✓ Ready in 314ms
+[00:00:03.043] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.667] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.848] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.921] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.975] Server  WARN    [next-auth][warn][DEBUG_ENABLED] "\nhttps://next-auth.js.org/warnings#debug_enabled"
+[00:00:03.978] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:04.073] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.082] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:04.113] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.238] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.269] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" className="dark" suppressHydrationWarning={true}>
+                          <head>
+                          <body
+                            className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:00:04.269] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" className="dark" suppressHydrationWarning={true}>
+                          <head>
+                          <body
+                            className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:00:04.293] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.456] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:04.468] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:04.485] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:04.493] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:04.501] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:04.509] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:04.516] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:04.524] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:04.531] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:04.537] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:04.543] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:04.551] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:04.558] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:14.709] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:14.854] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:14.929] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:14.947] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:14.962] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:14.979] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:15.008] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:15.031] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:15.048] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:15.061] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:15.081] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:15.470] Server  ERROR   (node:94685) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[00:00:15.684] Server  LOG     [next-auth][debug][CREATE_STATE] {}
+[00:00:15.687] Server  LOG     [next-auth][debug][CREATE_PKCECODEVERIFIER] {}
+[00:00:15.688] Server  LOG     [next-auth][debug][GET_AUTHORIZATION_URL] {}
+[00:00:19.114] Server  LOG     [next-auth][debug][PROFILE_DATA] {}
+[00:00:19.114] Server  LOG     [next-auth][debug][OAUTH_CALLBACK_RESPONSE] {}
+[00:00:19.115] Server  LOG     [next-auth][debug][adapter_getUserByAccount] {}
+[00:00:19.121] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:19.122] Server  LOG     [next-auth][debug][adapter_getUserByAccount] {}
+[00:00:19.763] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:19.809] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:19.817] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:19.868] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:19.879] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:19.889] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:19.899] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:19.910] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:19.919] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:19.926] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:19.942] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:00:20.904] Server  ERROR   ⨯ ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+
+
+[00:00:21.140] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:21.142] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:21.154] Server  ERROR   ⨯ ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+
+
+[00:00:21.335] Browser ERROR   uncaughtError: Error: ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+
+
+[00:00:21.540] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:21.540] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.247] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.247] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.247] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.247] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.247] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.247] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.247] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.247] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:00:22.248] Browser ERROR   ./app/motos/[id]/page.tsx:641:6
+Parsing ecmascript source code failed
+  639 |             </main>
+  640 |         )
+> 641 |     }
+      |      ^
+  642 |
+
+Expected '}', got '<eof>'
+[00:01:25.521] Server  LOG     ✓ Compiled in 533ms
+[00:01:25.523] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:01:25.523] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:01:26.616] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:26.712] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:01:26.773] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:01:26.807] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:01:26.815] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:01:26.825] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:01:26.834] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:01:26.844] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:01:26.851] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:01:26.860] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:01:27.205] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:08.899] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:08.990] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:09.048] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:09.061] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:09.070] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:09.082] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:09.095] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:09.110] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:09.137] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:09.149] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:09.159] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:09.167] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:09.180] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:09.675] Server  LOG     [next-auth][debug][CREATE_STATE] {}
+[00:02:09.676] Server  LOG     [next-auth][debug][CREATE_PKCECODEVERIFIER] {}
+[00:02:09.677] Server  LOG     [next-auth][debug][GET_AUTHORIZATION_URL] {}
+[00:02:12.897] Server  LOG     [next-auth][debug][PROFILE_DATA] {}
+[00:02:12.897] Server  LOG     [next-auth][debug][OAUTH_CALLBACK_RESPONSE] {}
+[00:02:12.898] Server  LOG     [next-auth][debug][adapter_getUserByAccount] {}
+[00:02:12.899] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:12.901] Server  LOG     [next-auth][debug][adapter_getUserByAccount] {}
+[00:02:13.515] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:13.546] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:13.561] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:13.626] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:13.633] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:13.641] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:13.649] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:13.660] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:13.668] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:13.676] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:13.698] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:13.706] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:13.712] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:14.784] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:14.793] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:26.756] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:26.840] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:26.849] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:28.354] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:28.362] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:02:56.172] Server  LOG     ✓ Compiled in 110ms
+[00:03:11.750] Server  LOG     ✓ Compiled in 51ms
+[00:04:41.572] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:04:41.585] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:04:46.837] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:04:46.856] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:04:55.769] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:04:55.778] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:05:01.824] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:05:01.839] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:05:03.333] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:05:03.368] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:05:22.602] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:05:22.735] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:05:22.753] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:05:27.129] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:05:27.137] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:05:40.949] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:05:40.964] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:08:00.327] Server  LOG     ✓ Compiled in 120ms
+[00:08:15.942] Server  LOG     ✓ Compiled in 80ms
+[00:08:46.940] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:08:46.960] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:23.986] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:27.604] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:27.713] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/motos/cmj..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" className="dark" suppressHydrationWarning={true}>
+                          <head>
+                          <body
+                            className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:09:27.738] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:27.739] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:27.775] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:27.789] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:27.804] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:27.812] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:27.824] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:27.835] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:27.850] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:27.862] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:27.875] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:27.883] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:31.596] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:36.484] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:38.264] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:38.312] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:38.355] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:38.384] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:38.397] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:38.407] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:38.417] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:38.429] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:38.441] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:38.452] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:38.475] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:38.484] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:09:38.492] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:15.270] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:21.035] Server  WARN    [next-auth][warn][DEBUG_ENABLED] "\nhttps://next-auth.js.org/warnings#debug_enabled"
+[00:11:21.037] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:36.375] Server  LOG     ✓ Compiled in 237ms
+[00:11:45.049] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:45.108] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:45.119] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:45.126] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:45.135] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:45.144] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:45.151] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:45.159] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:45.168] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:45.180] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:45.192] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:48.479] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:48.489] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:51.842] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:11:51.858] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:06.156] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:07.966] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:08.078] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:08.080] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:08.142] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:08.158] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:08.172] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:08.186] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:08.196] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:08.206] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:08.214] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:08.225] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:08.234] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:08.248] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:20.716] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:20.759] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:20.764] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:20.861] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:20.873] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:20.885] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:20.896] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:20.909] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:20.917] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:20.926] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:20.937] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:20.952] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:20.965] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:25.518] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:28.047] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:28.134] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:28.138] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:28.178] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:28.191] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:28.201] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:28.211] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:28.221] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:28.229] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:28.238] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:28.252] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:28.265] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:12:28.276] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:13:03.672] Server  LOG     ✓ Compiled in 80ms
+[00:14:07.869] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:10.487] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:10.517] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:10.520] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:10.594] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:10.610] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:10.619] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/motos/cmj..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" className="dark" suppressHydrationWarning={true}>
+                          <head>
+                          <body
+                            className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:14:10.622] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:10.649] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:10.660] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:10.672] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:10.682] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:10.691] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:10.700] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:10.710] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:19.655] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:19.662] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:22.279] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:22.306] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:22.308] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:22.419] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:22.434] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:22.462] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:22.473] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:22.483] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:22.493] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:22.502] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:22.512] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:22.531] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:22.542] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:24.929] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:24.979] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:29.921] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:32.501] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:32.509] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:34.576] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:34.587] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:37.942] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:46.358] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:47.601] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:47.618] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:49.998] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:50.012] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:51.315] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:14:51.343] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:15:24.290] Server  LOG     ✓ Compiled in 46ms
+[00:15:53.774] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:15:53.798] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:15:57.706] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:15:59.276] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:15:59.286] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:16:38.556] Server  LOG     ✓ Compiled in 66ms
+[00:16:53.501] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:53.501] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" className="dark" suppressHydrationWarning={true}>
+                          <head>
+                          <body
+                            className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:16:53.585] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:16:53.590] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:16:53.702] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:16:53.747] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:16:53.763] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:16:53.778] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:16:53.795] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:16:53.813] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:16:53.831] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:16:53.855] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:16:53.869] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:16:53.888] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:16:55.822] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:16:55.833] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:17:18.568] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:17:24.860] Server  LOG     ✓ Compiled in 48ms
+[00:18:14.682] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:18:14.705] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:18:17.508] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:18:17.542] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:18:21.625] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:18:21.640] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:18:52.737] Server  LOG     ✓ Compiled in 86ms
+[00:18:54.130] Server  LOG     [next-auth][debug][adapter_deleteSession] {}
+[00:18:54.177] Server  LOG     ✓ Compiled in 0ms
+[00:18:54.558] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:54.676] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="es" className="dark" suppressHydrationWarning={true}>
+                          <head>
+                          <body
+                            className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:18:56.321] Server  LOG     [next-auth][debug][CREATE_STATE] {}
+[00:18:56.323] Server  LOG     [next-auth][debug][CREATE_PKCECODEVERIFIER] {}
+[00:18:56.324] Server  LOG     [next-auth][debug][GET_AUTHORIZATION_URL] {}
+[00:18:59.487] Server  LOG     [next-auth][debug][PROFILE_DATA] {}
+[00:18:59.487] Server  LOG     [next-auth][debug][OAUTH_CALLBACK_RESPONSE] {}
+[00:18:59.487] Server  LOG     [next-auth][debug][adapter_getUserByAccount] {}
+[00:18:59.489] Server  LOG     [next-auth][debug][adapter_getUserByAccount] {}
+[00:18:59.490] Server  LOG     [next-auth][debug][adapter_createSession] {}
+[00:19:00.122] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:00.154] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:00.170] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:00.230] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:00.240] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:00.248] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:00.265] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:00.277] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:00.291] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:00.310] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:00.328] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:00.336] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:00.347] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:02.357] Server  LOG     [next-auth][debug][adapter_deleteSession] {}
+[00:19:02.545] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:04.639] Server  LOG     [next-auth][debug][CREATE_STATE] {}
+[00:19:04.640] Server  LOG     [next-auth][debug][CREATE_PKCECODEVERIFIER] {}
+[00:19:04.641] Server  LOG     [next-auth][debug][GET_AUTHORIZATION_URL] {}
+[00:19:17.123] Server  LOG     [next-auth][debug][PROFILE_DATA] {}
+[00:19:17.123] Server  LOG     [next-auth][debug][OAUTH_CALLBACK_RESPONSE] {}
+[00:19:17.123] Server  LOG     [next-auth][debug][adapter_getUserByAccount] {}
+[00:19:17.125] Server  LOG     [next-auth][debug][adapter_getUserByAccount] {}
+[00:19:17.126] Server  LOG     [next-auth][debug][adapter_getUserByEmail] {}
+[00:19:17.126] Server  LOG     [next-auth][debug][adapter_createUser] {}
+[00:19:17.129] Server  LOG     [next-auth][debug][adapter_linkAccount] {}
+[00:19:17.131] Server  LOG     [next-auth][debug][adapter_createSession] {}
+[00:19:17.768] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:17.810] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:17.820] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:17.893] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:17.905] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:17.915] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:17.925] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:17.935] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:17.945] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:17.953] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:17.964] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:17.976] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:17.983] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:24.196] Server  LOG     ✓ Compiled in 47ms
+[00:19:41.561] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:41.746] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:41.784] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:44.059] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:44.067] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:19:47.972] Server  LOG     ✓ Compiled in 123ms
+[00:20:01.789] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:05.842] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:05.849] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:13.356] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:13.364] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:17.005] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:18.020] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:18.045] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:24.898] Server  LOG     [next-auth][debug][adapter_deleteSession] {}
+[00:20:25.130] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:26.228] Server  LOG     [next-auth][debug][CREATE_STATE] {}
+[00:20:26.229] Server  LOG     [next-auth][debug][CREATE_PKCECODEVERIFIER] {}
+[00:20:26.230] Server  LOG     [next-auth][debug][GET_AUTHORIZATION_URL] {}
+[00:20:29.254] Server  LOG     [next-auth][debug][PROFILE_DATA] {}
+[00:20:29.254] Server  LOG     [next-auth][debug][OAUTH_CALLBACK_RESPONSE] {}
+[00:20:29.255] Server  LOG     [next-auth][debug][adapter_getUserByAccount] {}
+[00:20:29.257] Server  LOG     [next-auth][debug][adapter_getUserByAccount] {}
+[00:20:29.258] Server  LOG     [next-auth][debug][adapter_createSession] {}
+[00:20:29.958] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:30.001] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:30.010] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:30.067] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:30.078] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:30.086] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:30.101] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:30.112] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:30.120] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:30.147] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:30.155] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:30.161] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:30.167] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:31.583] Server  LOG     [next-auth][debug][adapter_deleteSession] {}
+[00:20:31.782] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:32.984] Server  LOG     [next-auth][debug][CREATE_STATE] {}
+[00:20:32.985] Server  LOG     [next-auth][debug][CREATE_PKCECODEVERIFIER] {}
+[00:20:32.986] Server  LOG     [next-auth][debug][GET_AUTHORIZATION_URL] {}
+[00:20:43.007] Server  LOG     [next-auth][debug][PROFILE_DATA] {}
+[00:20:43.007] Server  LOG     [next-auth][debug][OAUTH_CALLBACK_RESPONSE] {}
+[00:20:43.008] Server  LOG     [next-auth][debug][adapter_getUserByAccount] {}
+[00:20:43.009] Server  LOG     [next-auth][debug][adapter_getUserByAccount] {}
+[00:20:43.010] Server  LOG     [next-auth][debug][adapter_createSession] {}
+[00:20:43.604] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:43.648] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:43.657] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:43.720] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:43.730] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:43.739] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:43.746] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:43.759] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:43.807] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:43.819] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:43.827] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:43.833] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:43.839] Server  LOG     [next-auth][debug][adapter_getSessionAndUser] {}
+[00:20:46.103] Server  LOG     [next-auth][debug][adapter_deleteSession] {}
+[00:20:46.294] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:36.592] Server  ERROR   [next-auth][error][SIGNIN_OAUTH_ERROR] "\nhttps://next-auth.js.org/errors#signin_oauth_error" "outgoing request timed out after 3500ms" {}
+[03:26:37.048] Server  LOG     ✓ Compiled in 387ms
+[19:11:18.585] Server  LOG     ✓ Compiled in 145ms
+[19:19:30.044] Server  LOG     ✓ Compiled in 49ms
+[19:19:56.278] Server  LOG     ✓ Compiled in 57ms
